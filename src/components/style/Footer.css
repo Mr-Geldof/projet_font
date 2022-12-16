@@ -1,0 +1,69 @@
+.footer__container
+{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    height: 400px;
+}
+form
+{
+    padding: 20px;
+}
+form h1
+{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 40px;
+}
+#name
+{
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 100px;
+    border: #448AA8;
+}
+#mail
+{
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;  
+    margin-top: 10px;
+    margin-left: 100px;
+    border: #448AA8;
+}
+#msg
+{
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;  
+    margin-top: 10px;
+    margin-left: 100px;
+    border: #448AA8;
+}
+.btn-1
+{
+    cursor: pointer;
+    margin-left: 120px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: #F5A144;
+    border: #F5A144;
+    margin-top: 20px; 
+    border-radius: 10px;
+}
+.btn-1:hover
+{
+    background-color: #448AA8;
+    border: #448AA8;
+}
+.copie
+{
+    color: white;
+    text-align: center;
+    margin-left: 1000px;
+    margin-top: -50px;
+}
