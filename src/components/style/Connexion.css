@@ -1,0 +1,37 @@
+.connexion__container
+{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+#mail
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 100px;
+    border: #ebf8e1;
+}
+#password
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: #ebf8e1;
+}
+.bnt1
+{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    border: #ebf8e1;
+    background-color: #5B9AB0;
+    border-radius: 10px;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {useForm} from 'react-hook-form'
 import { loginService } from "../../Services/login.service";
+import "../style/Connexion.css"
 
 export default function Connexion() {
 
@@ -13,23 +14,19 @@ export default function Connexion() {
   } = useForm();
 
   useEffect(() => {
-    console.log(isLogged)
     loginInfo && loginService(loginInfo, setIsLogged);
-  }, [isLogged]);
+  }, [loginInfo]);
 
   return (
-    <div>
+    <div className="connexion__container">
       <form onSubmit={handleSubmit((data) => setLoginInfo(data))}>
-        <label htmlFor="">
-          Email <br/>
-          <input {...register("email", { required: true })} />
-        </label>
-        <br/><br/>
-        <label htmlFor="">
-          Mot de passe<br/>
-          <input {...register("password", { required: true })} type="password" />
-        </label><br/><br/>
-        <input type="submit" />
+          <div>
+            <input placeholder="Email" id="mail"{...register("email", { required: true })} />
+          </div>
+          <div>
+            <input placeholder="Mot de passe" id="password" {...register("password", { required: true })} type="password" />
+          </div>
+          <button className="bnt1" type="submit">Connexion</button>
       </form>
     </div>
   );

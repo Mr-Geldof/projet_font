@@ -2,6 +2,7 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 
 export const loginService = async (loginInfo, setIsLogged) => {
+  console.log(loginInfo, setIsLogged)
 
     await axios.post('http://localhost:8080/api/auth',{
       email: loginInfo.email,
