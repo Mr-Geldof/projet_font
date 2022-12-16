@@ -1,6 +1,7 @@
 import React ,{useEffect, useState} from "react";
 import axios from "axios";
 import Footer from "../footer/Footer";
+import '../style/Appart.css'
 
 const Appartement = () => {
 
@@ -18,12 +19,14 @@ const Appartement = () => {
         <>
             <React.Fragment >
             {location.map((location, index) => (
-                            <div key={index}>
-                                <h2>{location.description}</h2>
+                            <div key={index} className="appart__containner">
+                                <img className="appart__img" src={location.image}/>
+                                <div className="tete">
+                                <h2 className="appart__desc">{location.description}</h2>
                                 <h2>{location.prix}</h2>
                                 <h2>{location.adresse}</h2>
                                 <h2>{location.téléphone}</h2>
-                               <img src={location.image}/>
+                                </div>
                             </div>
                         ))}
             <Footer/>
