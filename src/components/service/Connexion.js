@@ -13,7 +13,6 @@ export default function Connexion() {
   } = useForm();
 
   useEffect(() => {
-    console.log(isLogged)
     loginInfo && loginService(loginInfo, setIsLogged);
   }, [isLogged]);
 
